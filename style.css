@@ -5,17 +5,19 @@
     font-weight: 400;
 }
 .header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(15, 225, 82, 0.2),rgba(15, 225, 82, 0.2)),url(photos/back.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+  background-color: #ffffff; 
+  padding: 10px 0; 
+}
+.content-with-bg {
+  min-height: 80vh;
+  background-image: linear-gradient(rgba(69, 77, 72, 0.2),rgba(6, 71, 27, 0.2)),url(photos/back.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 60px 20px; 
 }
 
 nav{
     display: flex;
-    padding: 2% 6%;
     justify-content: center;
     align-items: center;
 }
@@ -37,21 +39,21 @@ nav{
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 3px 8px;
     position: relative;
 }
 
 .nav-links ul li a{
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     font-size: 15px;
 }
 
-.nav-links ul li::after{
+.nav-links ul li::after{ /*NEED TO CREDIT*/
     content:'';
     width: 0%;
     height: 2px;
-    background: #e424e4;
+    background: #182612;
     display: block;
     margin: auto;
     transition: 100ms;
@@ -85,13 +87,163 @@ nav{
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0px;
+    padding: 40px 0px;
     position: relative;
     width: 100%;
     bottom: 0;
 }
 
+/*<------ABOUT ME PAGE------->*/
 
+.content-with-bg2 {
+  min-height: 80vh;
+  background: #182612;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 20px; 
+  margin-top: 15rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.text-box2{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.text-box2 h1{
+  font-size: 62px;
+  margin-top: -200px;
+  color: #182612;
+}
+
+.text-box2 p{
+  margin: 10px 0px 40px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.text-box3 {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 85%; 
+  left: 10%;
+  transform: translateY(-50%); 
+  text-align: left; 
+}
+
+.text-box3 h1 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 75px;
+}
+
+.text-box3 p {
+  font-size: 20px; 
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.text-box3 h2 {
+  font-size: 25px;
+  font-weight: 600;
+
+}
+
+.text-box3 p2 {
+  font-size: 20px; 
+  font-weight: 300;  
+
+}
+
+
+
+div.picture{
+  content:url(Photos/aboutmepic.jpg);
+  scale: 20%;
+  margin-top: -600px;
+  display: block;
+  align-self: center;
+
+}
+
+
+/*--------CONTACT PAGE--------*/
+
+.contact-form {
+  min-height: 80vh;
+  background: #182612;
+  background-position: center;
+  background-size: cover;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center; 
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.contact-form h5 {
+  color: #fff;
+  font-size: 60px;
+  margin-bottom: 40px;  
+  text-align: center;   
+  width: 100%;
+}
+
+input {
+  background-color: white;
+  width: 100%;   
+  max-width: 500px; 
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;  
+  background-color: white;
+  width: 100%;   
+  max-width: 500px; 
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #A0A698;
+  border-width: 3px;
+}
+
+button {
+  background-color: #637368;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px; 
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  width: auto;  
+  max-width: none; 
+}
+
+button:hover {
+  opacity: 0.8;
+}
 
 
 
