@@ -48,6 +48,9 @@
         font-size: 32px; 
     }
 
+    .contact-form label {
+        font-size: 16px; /*bigger font*/
+      }
     input, textarea {
         padding: 12px;
         border-color: #4a6354;

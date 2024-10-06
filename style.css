@@ -21,7 +21,7 @@
 /*main page section w/ image background*/
 .content-with-bg {
   min-height: 80vh;
-  background-image: linear-gradient(rgba(69, 77, 72, 0.2),rgba(6, 71, 27, 0.2)),url(photos/back.jpg);
+  background-image: linear-gradient(#456b33,#182612);
   background-position: center;
   background-size: cover;
   padding: 60px 20px; 

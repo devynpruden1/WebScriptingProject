@@ -47,7 +47,10 @@
     input, textarea {
         padding: 14px;
     }
-
+    
+    .contact-form label {
+        font-size: 16px; /*bigger font*/
+      }
   
     .projects-container {
         flex-direction: column; /*makes them stack*/
