@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    /* imported font */
+    font-family: "Roboto", sans-serif; 
     font-weight: 400;
 }
 
@@ -16,6 +17,8 @@
   background-color: #ffffff; 
   padding: 10px 0; 
 }
+
+/*main page section w/ image background*/
 .content-with-bg {
   min-height: 80vh;
   background-image: linear-gradient(rgba(69, 77, 72, 0.2),rgba(6, 71, 27, 0.2)),url(photos/back.jpg);
@@ -24,6 +27,7 @@
   padding: 60px 20px; 
 }
 
+/* the nav bar */
 nav{
     display: flex;
     justify-content: center;
@@ -47,8 +51,10 @@ nav{
     text-decoration: none;
     font-size: 15px;
 }
+/*GreatStack - https://www.youtube.com/watch?v=oYRda7UtuhA&t=2384s utilized
+utilized the function where it shows a bar under the NAV menu option you're hovering over. */
 
-.nav-links ul li::after{ /*NEED TO CREDIT*/
+.nav-links ul li::after{ 
     content:'';
     width: 0%;
     height: 2px;
@@ -62,6 +68,7 @@ nav{
     width: 100%;
 }
 
+/*main page text setup*/
 .text-box{
     width: 90%;
     color: #fff;
@@ -81,7 +88,7 @@ nav{
     color: #fff;
 }
 
-
+/*footer setup*/
 .footer{
     background-color: #333;
     color: #fff;
@@ -95,7 +102,7 @@ nav{
 
 /*<------ABOUT ME PAGE------->*/
 
-
+/*changed the main bg format a bit*/
 .content-with-bg2 {
   display: flex;
   flex-direction: column; 
@@ -106,6 +113,7 @@ nav{
   text-align: center;
 }
 
+/*margin and display type for these classes*/
 .text-box2, .text-box3, .video-container, .picture {
   display: block;
   margin: 20px 0; 
@@ -123,11 +131,11 @@ nav{
   color: #fff;
 }
 
-/* Profile Picture */
+/* photo of me  */
 .picture {
-  content: url(Photos/aboutmepic.jpg);
+  content: url(Photos/aboutmepic.jpg); /* when I used img tag the styling would not change so I had to use this instead*/
   width: 300px; 
-  height: auto;
+  height: auto; /*keep aspect ratio the same w/ the change in width*/
   border-radius: 15px;
   margin-bottom: 20px; 
 }
@@ -153,14 +161,12 @@ nav{
   margin-bottom: 20px;
 }
 
-
+/* style for the video  */
 .video-container {
   width: 90%;
   max-width: 500px; 
   margin: 20px auto; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  overflow: hidden;
 }
 
 .video-container video {
@@ -175,6 +181,7 @@ nav{
 
 /*--------CONTACT PAGE--------*/
 
+/*setting up the form, had lots of trouble getting it to be centered*/
 .contact-form {
   min-height: 80vh;
   background: radial-gradient( #456b33, #182612);
@@ -211,6 +218,7 @@ nav{
   margin: 0 auto; 
 }
 
+/*style for the forms*/
 input, textarea {
   background-color: white;
   width: 100%;   
@@ -222,6 +230,7 @@ input, textarea {
   box-sizing: border-box;
 }
 
+/*submit*/
 button {
   background-color: #637368;
   border-radius: 20px;
@@ -236,7 +245,7 @@ button {
   margin-right: auto; 
 }
 
-
+/*helps user see that they're on the button*/
 button:hover {
   opacity: 0.8;
 }
@@ -251,7 +260,6 @@ button:hover {
   color: #fff;
 }
 
-/* Projects Container */
 .projects-container {
   display: flex;
   justify-content: center;
@@ -261,7 +269,7 @@ button:hover {
   margin: 0 auto;
 }
 
-
+/*style for displaying the project*/
 .project-card {
   position: relative;
   background-color: #333;
@@ -275,7 +283,7 @@ button:hover {
   overflow: hidden; 
 }
 
-
+/*style of the photo for the project*/
 .project-image {
   width: 100%; 
   height: 250px;
@@ -285,7 +293,7 @@ button:hover {
   margin-bottom: 15px;
 
   transform: scale(1.2); 
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out; /*cool effect when hovering the tile*/
 }
 
 
@@ -314,7 +322,7 @@ button:hover {
 
 
 
-
+/* google font said to add this */
 .roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;

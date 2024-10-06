@@ -1,0 +1,84 @@
+/*Styles for Mobile*/
+@media (max-width: 767px) {
+    .nav-links ul {
+        flex-direction: column; /*stack menu*/
+        padding: 10px;
+        background-color: #273a19; /*added border to nav bare for contrast*/
+    }
+
+    .nav-links ul li a {
+        color: #ffffff; 
+    }
+
+    /* Main Content */
+    .content-with-bg, .content-with-bg2 {
+        padding: 20px 10px;
+        background: #121f0e; /*darker background*/
+    }
+
+    .text-box h1, .text-box2 h1 {
+        font-size: 36px; 
+        color: #ffffff; 
+    }
+
+    .text-box3 {
+        max-width: 100%; 
+        padding: 0 10px;
+        color: #ffffff; /*white text */
+    }
+
+    .picture {
+        width: 180px;
+    }
+
+    /* Video Container */
+    .video-container {
+        max-width: 320px;
+        background-color: #121f0e; /*darkerbackground*/
+    }
+
+    /* Form Adjustments */
+    .contact-form {
+        padding: 20px;
+        background: radial-gradient( #0a0f07, #182612);/*darker for contrast*/
+        color: #ffffff;
+    }
+
+    .contact-form h5 {
+        font-size: 32px; 
+    }
+
+    input, textarea {
+        padding: 12px;
+        border-color: #4a6354;
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    button {
+        padding: 6px 14px;
+        background-color: #e6fae8; /*changed the colour of button*/
+        color: #000000;
+        
+    }
+
+
+    /* Projects Section */
+    .projects-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        background-color: transparent;
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 10px;
+        background-color: #96b893; 
+        color: #000000; /*contrast*/
+    }
+
+    .project-image {
+        height: 150px; /*smaller img*/
+    }
+}

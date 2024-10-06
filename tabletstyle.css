@@ -1,0 +1,62 @@
+/* Styles for Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Navigation */
+    .nav-links ul {
+        flex-direction: column; /*Stack nav */
+        padding: 10px;
+    }
+
+    .nav-links ul li {
+        padding: 8px 0; /*More space for menu options */
+    }
+
+    /* Main Content */
+    .content-with-bg, .content-with-bg2 {
+        padding: 30px 20px; 
+    }
+
+    .text-box h1, .text-box2 h1 {
+        font-size: 48px; /* Reduce heading sizes */
+        color: #ffffff;
+    }
+
+    .text-box3 {
+        max-width: 90%;
+        padding: 0 15px; 
+    }
+
+    .picture {
+        width: 250px; /*Reduced image size */
+    }
+
+    /* Video Container */
+    .video-container {
+        max-width: 450px; 
+    }
+
+    /* Form Adjustments */
+    .contact-form {
+        padding: 30px;
+        background: radial-gradient( #0a0f07, #182612);/*darker for contrast*/
+    }
+
+    .contact-form h5 {
+        font-size: 40px; /*diff font size*/
+    }
+
+    input, textarea {
+        padding: 14px;
+    }
+
+  
+    .projects-container {
+        flex-direction: column; /*makes them stack*/
+        padding: 20px;
+    }
+
+    .project-card {
+        max-width: 350px; 
+        padding: 15px;
+        color: #000000;
+    }
+}
